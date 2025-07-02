@@ -19,8 +19,8 @@ Compatible con datasets por niveles (como Marugoto) y con transcripción por voz
 1. Clona este repositorio y entra al directorio:
 
 ```bash
-git clone https://github.com/tuusuario/entrenador-nihongo.git
-cd entrenador-nihongo
+git clone https://github.com/EndikaRamos/entrenador-lectura-japones.git
+cd entrenador-lectura-japones
 ```
 
 2. Crea un entorno virtual:
