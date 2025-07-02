@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+.env
+
+# Archivos de audio temporales
+uploads/
+*.webm
+
+# Archivos de Python compilados
+__pycache__/
+*.pyc
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos del editor
+.vscode/
+.idea/

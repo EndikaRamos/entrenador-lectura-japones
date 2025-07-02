@@ -1,0 +1,52 @@
+[
+  {
+    "kanji": "こんにちは。",
+    "hiragana": "こんにちは。",
+    "romaji": "konnichiwa"
+  },
+  {
+    "kanji": "おはようございます。",
+    "hiragana": "おはようございます。",
+    "romaji": "ohayou gozaimasu"
+  },
+  {
+    "kanji": "はじめまして。",
+    "hiragana": "はじめまして。",
+    "romaji": "hajimemashite"
+  },
+  {
+    "kanji": "私は学生です。",
+    "hiragana": "わたしはがくせいです。",
+    "romaji": "watashi wa gakusei desu"
+  },
+  {
+    "kanji": "スペイン人です。",
+    "hiragana": "すぺいんじんです。",
+    "romaji": "supeinjin desu"
+  },
+  {
+    "kanji": "先生ですか？",
+    "hiragana": "せんせいですか？",
+    "romaji": "sensei desu ka?"
+  },
+  {
+    "kanji": "はい、そうです。",
+    "hiragana": "はい、そうです。",
+    "romaji": "hai, sou desu"
+  },
+  {
+    "kanji": "いいえ、ちがいます。",
+    "hiragana": "いいえ、ちがいます。",
+    "romaji": "iie, chigaimasu"
+  },
+  {
+    "kanji": "どこからきましたか？",
+    "hiragana": "どこからきましたか？",
+    "romaji": "doko kara kimashita ka?"
+  },
+  {
+    "kanji": "スペインからきました。",
+    "hiragana": "すぺいんからきました。",
+    "romaji": "supein kara kimashita"
+  }
+]

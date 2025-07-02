@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Entrenador Nihongo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3273dc;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <div class="columns">
+    <!-- Frase + controles -->
+    <div class="column is-two-thirds">
+      <h1 class="title">Lee en voz alta:</h1>
+
+      <div class="box">
+        <p class="is-size-4"><strong id="kanji">{{ frase.kanji }}</strong></p>
+        <p class="is-size-5 has-text-grey"><em id="hiragana">{{ frase.hiragana }}</em></p>
+      </div>
+
+      <!-- Selector de modelo -->
+      <div class="field">
+        <label class="label">Modelo Whisper</label>
+        <div class="control">
+          <div class="select">
+            <select id="modeloSelect">
+              <option value="tiny">tiny</option>
+              <option value="base" selected>base</option>
+              <option value="small">small</option>
+              <option value="medium">medium</option>
+              <option value="large">large</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Selector de dataset -->
+      <div class="field">
+        <label class="label">Dataset</label>
+        <div class="control">
+          <div class="select">
+            <select id="datasetSelect">
+              {% for d in datasets %}
+                <option value="{{ d }}" {% if d == dataset %}selected{% endif %}>{{ d }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botones -->
+      <div class="buttons mt-3">
+        <button class="button is-primary" id="startBtn">🎙️ Grabar</button>
+        <button class="button is-light" id="otraBtn">🔄 Otra frase</button>
+      </div>
+
+      <!-- Resultado -->
+      <p class="mt-4" id="resultado">Esperando...</p>
+    </div>
+
+    <!-- Historial -->
+    <div class="column">
+      <h2 class="subtitle">Historial</h2>
+      <div class="box" id="historial">
+        <p class="has-text-grey">Aquí aparecerán tus lecturas.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
